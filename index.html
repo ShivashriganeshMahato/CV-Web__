@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-draw">
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Nepal"><img src="Images/Nepal_Flag.png" width="50" height="61"></a>
+                <a href="https://en.wikipedia.org/wiki/United_States"><img src="Images/US_Flag.png" width="116" height="61" align="right"></a>
+                <div class="page-header centerText">
+                    <h3 class="italics">Curriculum Vitae | Dr. Dip Narayan Mahato</h3>
+                </div>
+            </div>
+            <div class="jumbotron">
+                <div class = "centerText">
+                    <p class="center">Dip Narayan Mahato, PhD<br />Senior Process Technology Development Engineer<br />Intel Corporation, Hillsboro, RA3 Campus<br />2501 NW 229<sup>th</sup> Avenue, Hillsboro, OR 97124, USA</p>
+                    <p class="center">USA Permanent Resident<br />7005 NE Willowgrove St<br />Hillsboro, OR 97124, USA<br /><a href="mailto:dnm1966@gmail.com" class="underlineText">dnm1966@gmail.com</a></p>
+                    <!--<div class="btn-group">
+                        <button type="button" onclick="changeCenterText(0)" class="btn btn-primary">About</button>
+                        <button type="button" onclick="changeCenterText(1)" class="btn btn-success">Updates</button>
+                        <button type="button" onclick="changeCenterText(2)" class="btn btn-warning">Screenshots</button>
+                        <button type="button" onclick="changeCenterText(3)" class="btn btn-danger">Subscribe</button>
+                        <button type="button" onclick="changeCenterText(4)" class="btn btn-info">FAQ</button>
+                    </div>-->
+                </div>
+                <br />
+                <div id="titleForSection" class="largeTextTwenty centerText"></div>
+                <div class="leftText"><div id="infoShowing" class="largeTextTwenty"></div></div>
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <div class="sideBar">
+        <div class="navbar navbar-default">
+            <nav>
+                <a href="Javascript:void0;" onclick="AboutHandle()">About</a>
+                <a href="Javascript:void0;" onclick="QualifsHandle()">Academic Qualifications</a>
+                <a href="Javascript:void0;" onclick="EmHistoryHandle()">Employment History</a>
+                <a href="Javascript:void0;" onclick="EnginSkillsHandle()">Engineering Skills/Expertise</a>
+                <a href="Javascript:void0;" onclick="DevResIntsHandle()">Development & Research Interests</a>
+                <a href="Javascript:void0;" onclick="EquipUsedHandle()">Equipment Used</a>
+                <a href="Javascript:void0;" onclick="CompSoftSkillsHandle()">Computer/Software Skills</a>
+                <a href="Javascript:void0;" onclick="PublicsHandle()">Publications</a>
+                <a href="Javascript:void0;" onclick="ConfPresPartHandle()">Conference Presentations/participations</a>
+                <a href="Javascript:void0;" onclick="MajorWorkPartsHandle()">Major Workshop/Participation</a>
+                <a href="Javascript:void0;" onclick="AHFGrantsHandle()">Awards, Honors, Fundings & Grants</a>
+                <a href="Javascript:void0;" onclick="ProffAffilHandle()">Professional Affiliations</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        var triggered = false;
+        $(document).ready(function () {
+            $('body').on("mousemove", function (e) {
+                triggered = e.pageX < 200;
+                if (triggered) {
+                    $('.navbar').css('-webkit-transform', 'translate(0, 0)');
+                } else {
+                    $('.navbar').css('-webkit-transform', 'translate(-100%, 0)');
+                }
+            })
+        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
